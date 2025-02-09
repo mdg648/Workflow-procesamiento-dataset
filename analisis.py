@@ -33,7 +33,7 @@ plt.xlabel('Puntos Medios por Partido')
 plt.ylabel('Equipo')
 plt.title('Puntos Medios por Partido de Cada Equipo (Temporada 2021-2022)')
 plt.gca().invert_yaxis()
-plt.show()
 
 # guardar la grafica
 plt.savefig('puntos_medios_por_equipo.png')
+plt.show()
