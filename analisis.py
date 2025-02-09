@@ -1,7 +1,13 @@
 import pandas as pd
+import sys
 
 # leer csv
-df = pd.read_csv('nba2021_2022.csv')
+if len(sys.argv) < 2:
+    print("Por favor, proporciona el nombre del archivo CSV como argumento.")
+    sys.exit(1)
+
+csv_file = sys.argv[1]
+df = pd.read_csv(csv_file)
 
 import matplotlib.pyplot as plt
 
